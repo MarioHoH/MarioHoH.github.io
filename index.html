@@ -1,5 +1,1232 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Mario</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Mario</h1><a id="logo" href="/.">Mario</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/uncategorized/Hello-Wor/">Hello Wor</a></h1><div class="post-meta">2017-06-26</div><p class="readmore"><a href="/uncategorized/Hello-Wor/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/uncategorized/my-first-blog/">Pandas - Something to notice</a></h1><div class="post-meta">2017-06-25</div><div class="post-content">
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="Mario&apos;s blog about data science and something else.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mario">
+<meta property="og:url" content="http://gooalgo.com/index.html">
+<meta property="og:site_name" content="Mario">
+<meta property="og:description" content="Mario&apos;s blog about data science and something else.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mario">
+<meta name="twitter:description" content="Mario&apos;s blog about data science and something else.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://gooalgo.com/"/>
+
+
+
+
+
+  <title>Mario</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mario</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/Hello-Wor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/Hello-Wor/" itemprop="url">Hello Wor</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-26T17:08:12-04:00">
+                06-26-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/my-first-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/my-first-blog/" itemprop="url">Pandas - Something to notice</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-25T23:35:22-04:00">
+                06-25-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
 
 	<div class="row">
     <embed src="http://sjchen.im.nuu.edu.tw/MachineLearning/final/CLS_DT.pdf" width="100%" height="550" type="application/pdf">
-	</div></div><p class="readmore"><a href="/uncategorized/my-first-blog/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/uncategorized/maye/">no-title</a></h1><div class="post-meta">2017-06-17</div><div class="post-content"><h1 id="Confidence-interval"><a href="#Confidence-interval" class="headerlink" title="Confidence interval"></a>Confidence interval</h1><p>The correct interpretation is thus that the confidence interval is constructed by a procedure, which, when you repeat the experiment many many times, is such that in 95% of the experiments the corresponding confidence interval would cover the true value. I can illustrate this using a small simulation study in R. Let’s assume your true proportion is 10%.</p></div><p class="readmore"><a href="/uncategorized/maye/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/uncategorized/maye的副本 2/">no-title</a></h1><div class="post-meta">2017-06-17</div><div class="post-content"><h1 id="Something-about-EDA"><a href="#Something-about-EDA" class="headerlink" title="Something about EDA"></a>Something about EDA</h1><p><strong>Elizabeth Susan Joseph wrote</strong></p></div><p class="readmore"><a href="/uncategorized/maye的副本 2/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/uncategorized/maye的副本 3/">no-title</a></h1><div class="post-meta">2017-06-17</div><div class="post-content"><h1 id="Something-about-EDA"><a href="#Something-about-EDA" class="headerlink" title="Something about EDA"></a>Something about EDA</h1><p><strong>Elizabeth Susan Joseph wrote</strong></p></div><p class="readmore"><a href="/uncategorized/maye的副本 3/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/uncategorized/maye的副本/">no-title</a></h1><div class="post-meta">2017-06-17</div><div class="post-content"><h1 id="Pandas-Index的一些心得"><a href="#Pandas-Index的一些心得" class="headerlink" title="Pandas Index的一些心得"></a>Pandas Index的一些心得</h1><p>总体而言 Pandas 的 Index 大致有三种方法(都可以设置值), 2 3 两份方法,接收的都是list</p></div><p class="readmore"><a href="/uncategorized/maye的副本/">Read More</a></p></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://gooalgo.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/uncategorized/Hello-Wor/">Hello Wor</a></li><li class="post-list-item"><a class="post-list-link" href="/uncategorized/my-first-blog/">Pandas - Something to notice</a></li><li class="post-list-item"><a class="post-list-link" href="/uncategorized/maye/">maye</a></li><li class="post-list-item"><a class="post-list-link" href="/uncategorized/maye的副本 2/">maye的副本 2</a></li><li class="post-list-item"><a class="post-list-link" href="/uncategorized/maye的副本 3/">maye的副本 3</a></li><li class="post-list-item"><a class="post-list-link" href="/uncategorized/maye的副本/">maye的副本</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">Mario.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+	</div>
+
+
+
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">data</span>['diagnosis'] = <span class="keyword">data</span>['diagnosis'].map(&#123;'<span class="type">M</span>':1,'<span class="type">B</span>':0&#125;)</span></div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/maye的副本 3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/maye的副本 3/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-17T16:24:48-04:00">
+                06-17-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Something-about-EDA"><a href="#Something-about-EDA" class="headerlink" title="Something about EDA"></a>Something about EDA</h1><p><strong>Elizabeth Susan Joseph wrote</strong></p>
+<p> “while doing any data science problem do an exploratory data analysis(EDA)  to decide what features you should use as inputs to your model”.  </p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% pdf https:<span class="regexp">//</span>drive.google.com<span class="regexp">/file/</span>d<span class="regexp">/0B6qSwdwPxPRdTEliX0dhQ2JfUEU/</span>preview %&#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/maye/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/maye/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-17T16:24:48-04:00">
+                06-17-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Confidence-interval"><a href="#Confidence-interval" class="headerlink" title="Confidence interval"></a>Confidence interval</h1><p>The correct interpretation is thus that the confidence interval is constructed by a procedure, which, when you repeat the experiment many many times, is such that in 95% of the experiments the corresponding confidence interval would cover the true value. I can illustrate this using a small simulation study in R. Let’s assume your true proportion is 10%.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/maye的副本 2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/maye的副本 2/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-17T16:24:48-04:00">
+                06-17-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Something-about-EDA"><a href="#Something-about-EDA" class="headerlink" title="Something about EDA"></a>Something about EDA</h1><p><strong>Elizabeth Susan Joseph wrote</strong></p>
+<p> “while doing any data science problem do an exploratory data analysis(EDA)  to decide what features you should use as inputs to your model”.  </p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">pdf</span> http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf %&#125;</span><span class="xml"></span></div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://gooalgo.com/uncategorized/maye的副本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mario">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mario">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/uncategorized/maye的副本/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-17T16:24:48-04:00">
+                06-17-2017
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Pandas-Index的一些心得"><a href="#Pandas-Index的一些心得" class="headerlink" title="Pandas Index的一些心得"></a>Pandas Index的一些心得</h1><p>总体而言 Pandas 的 Index 大致有三种方法(都可以设置值), 2 3 两份方法,接收的都是list</p>
+<ul>
+<li>传统的python slice df[0]不行,必须df[0:1] <em>df[:,2:3]</em> 不行</li>
+<li>loc方法 label-based df.loc[0:1,:]包含第一行  <strong>Integers are valid labels, but they refer to the label and not the position.</strong>  不可以out of range ,因为所有索引都被看做是label</li>
+<li>iloc方法 position-based df.loc[0:1,:] 不包含 可以out of range 但必须是range(例如df.iloc[0:100])</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Retrieve the total score of the first row</span></div><div class="line">print(times_df.loc[<span class="number">0</span>, <span class="string">'total_score'</span>])</div><div class="line"></div><div class="line"><span class="comment"># Retrieve rows 0 and 1</span></div><div class="line">print(times_df[<span class="number">0</span>:<span class="number">2</span>])</div><div class="line"></div><div class="line"><span class="comment"># Retrieve the values at columns and rows 1-3</span></div><div class="line">print(times_df.iloc[<span class="number">1</span>:<span class="number">4</span>,<span class="number">1</span>:<span class="number">4</span>])</div><div class="line"></div><div class="line"><span class="comment"># Retrieve the column `total_score` </span></div><div class="line">print(times_df[<span class="string">'total_score'</span>])</div></pre></td></tr></table></figure>
+<p>query方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">common_columns = set(shanghai_df.columns) &amp; set(times_df.columns)</div><div class="line"></div><div class="line"><span class="comment"># Return `common_columns`</span></div><div class="line">print(common_columns)</div></pre></td></tr></table></figure>
+<p>pipeline in Pandas</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Query <span class="keyword">for</span> the rows <span class="keyword">with</span> university name <span class="symbol">'Massachusetts</span> Institute <span class="keyword">of</span> Technology (MIT)'</div><div class="line">print(ranking_df.query(<span class="string">"university_name == 'Massachusetts Institute of Technology (MIT)'"</span>))</div><div class="line"></div><div class="line"># Localize the rows <span class="keyword">with</span> the MIT university name <span class="keyword">and</span> replace value </div><div class="line">print(ranking_df.loc[lambda df: df.university_name == <span class="symbol">'Massachusetts</span> Institute <span class="keyword">of</span> Technology (MIT)', </div><div class="line">                    <span class="symbol">'university_name</span>'] = <span class="symbol">'Massachusetts</span> Institute <span class="keyword">of</span> Technology')</div></pre></td></tr></table></figure>
+<p>lambda 用于 .loc .iloc 方法之中</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">In</span> [<span class="number">7</span>]: df = pd.DataFrame(&#123;<span class="symbol">'Status</span>':[<span class="symbol">'Delivered</span>', <span class="symbol">'Delivered</span>', <span class="symbol">'Undelivered</span>',</div><div class="line">                                     <span class="symbol">'SomethingElse</span>']&#125;)</div><div class="line"></div><div class="line"><span class="keyword">In</span> [<span class="number">8</span>]: df</div><div class="line"><span class="keyword">Out</span>[<span class="number">8</span>]:</div><div class="line">          Status</div><div class="line"><span class="number">0</span>      Delivered</div><div class="line"><span class="number">1</span>      Delivered</div><div class="line"><span class="number">2</span>    Undelivered</div><div class="line"><span class="number">3</span>  SomethingElse</div><div class="line"></div><div class="line"><span class="keyword">In</span> [<span class="number">9</span>]: d = &#123;<span class="symbol">'Delivered</span>': <span class="literal">True</span>, <span class="symbol">'Undelivered</span>': <span class="literal">False</span>&#125;</div><div class="line"></div><div class="line"><span class="keyword">In</span> [<span class="number">10</span>]: df[<span class="symbol">'Status</span>'].map(d)</div><div class="line"><span class="keyword">Out</span>[<span class="number">10</span>]:</div><div class="line"><span class="number">0</span>     <span class="literal">True</span></div><div class="line"><span class="number">1</span>     <span class="literal">True</span></div><div class="line"><span class="number">2</span>    <span class="literal">False</span></div><div class="line"><span class="number">3</span>      NaN</div><div class="line">Name: Status, dtype: object</div></pre></td></tr></table></figure>
+<figure class="highlight tp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import pandas as pd</div><div class="line">df = pd.DataFrame(&#123;<span class="string">'C1'</span>:[<span class="string">'X'</span>, <span class="string">'Y'</span>, <span class="string">'X'</span>, <span class="string">'Y'</span>], <span class="string">'C2'</span>:[<span class="string">'Y'</span>, <span class="string">'Y'</span>, <span class="string">'X'</span>, <span class="string">'X'</span>]&#125;)</div><div class="line"></div><div class="line">  C<span class="number">1</span> C<span class="number">2</span></div><div class="line"><span class="number">0</span>  <span class="keyword">X</span>  <span class="keyword">Y</span></div><div class="line"><span class="number">1</span>  <span class="keyword">Y</span>  <span class="keyword">Y</span></div><div class="line"><span class="number">2</span>  <span class="keyword">X</span>  <span class="keyword">X</span></div><div class="line"><span class="number">3</span>  <span class="keyword">Y</span>  <span class="keyword">X</span></div><div class="line"></div><div class="line">df.replace(&#123;<span class="string">'C2'</span>: &#123;<span class="string">'X'</span>: True, <span class="string">'Y'</span>: False&#125;&#125;)</div><div class="line"></div><div class="line">  C<span class="number">1</span>     C<span class="number">2</span></div><div class="line"><span class="number">0</span>  <span class="keyword">X</span>  False</div><div class="line"><span class="number">1</span>  <span class="keyword">Y</span>  False</div><div class="line"><span class="number">2</span>  <span class="keyword">X</span>   True</div><div class="line"><span class="number">3</span>  <span class="keyword">Y</span>   True</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Series</th>
+<th><code>series[label]</code></th>
+<th>scalar value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DataFrame</td>
+<td><code>frame[colname]</code></td>
+<td><code>Series</code> corresponding to colname</td>
+</tr>
+<tr>
+<td>Panel</td>
+<td><code>panel[itemname]</code></td>
+<td><code>DataFrame</code> corresponding to the itemname</td>
+</tr>
+</tbody>
+</table>
+<p>df[0:1]选第一行</p>
+<p>但df[0]不行</p>
+<p>all_data.loc[:,’MSSubClass’] work</p>
+<p>all_data.loc[‘MSSubClass’] not work</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s[s.isin([<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>])]</div></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">df</span><span class="selector-class">.groupby</span>(<span class="string">"sex"</span>)<span class="selector-attr">["postTestScore"]</span><span class="selector-class">.transform</span>(<span class="string">"mean"</span>)</div></pre></td></tr></table></figure>
+<p>copy的妙处</p>
+<p>The correct interpretation is thus that the confidence interval is constructed by a procedure, which, when you repeat the experiment many many times, is such that in 95% of the experiments the corresponding confidence interval would cover the true value. I can illustrate this using a small simulation study in R. Let’s assume your true proportion is 10%.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Mario" />
+          <p class="site-author-name" itemprop="name">Mario</p>
+           
+              <p class="site-description motion-element" itemprop="description">Mario's blog about data science and something else.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mario</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
